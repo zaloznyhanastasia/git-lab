@@ -8,3 +8,7 @@ def median(numbers):
     if n % 2 == 0:
         return (numbers[n//2 - 1] + numbers[n//2]) / 2
     return numbers[n//2]
+
+def read_data(filename):
+    with open(filename, 'r') as f:
+        return [float(x) for x in f.read().split()]
