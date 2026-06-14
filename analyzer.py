@@ -12,3 +12,5 @@ def median(numbers):
 def read_data(filename):
     with open(filename, 'r') as f:
         return [float(x) for x in f.read().split()]
+def format_results(data):
+    return f'Результаты: {data}'
